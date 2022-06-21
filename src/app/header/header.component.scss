@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  padding-left: 10px;
+  background-color: #7cd67f;
+  align-items: center;
+  min-height: 50px;
+  margin-bottom: 10px;
+  .header_currency {
+    color: #205422;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+  }
+}

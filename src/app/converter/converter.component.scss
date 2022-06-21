@@ -1,0 +1,35 @@
+.currency_div__container {
+  display: flex;
+  justify-content: center;
+  gap: 10px 10px;
+  flex-wrap: wrap;
+  .currency_div {
+    min-height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #d5ffcc;
+    color: green;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    input, select {
+      max-width: 90%;
+      width: 100%;
+      margin: 0 auto;
+      background-color: #c1e3b7;
+      border: 1px solid #73ffb7;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    select {
+      min-height: 30px;
+    }
+    input {
+      min-height: 40px;
+    }
+  }
+}
+
+

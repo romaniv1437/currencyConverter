@@ -1,0 +1,29 @@
+<!-- окремий компонент, можна винести в окремий файл-->
+<div class="currency_div__container">
+  <div class="currency_div">
+    <h2>Конвертер валюти</h2>
+    {{choiceEUR? choiceEUR: null}}
+    <input type="text" value="" (change)="setCurrencyEUR($event)" placeholder="Введіть валюту"/>
+    <select (change)="setChoiceEUR($event)">
+      <option>EUR to UAH</option>
+      <option>UAH to EUR</option>
+    </select>
+    <p>{{currencyConverter(inputCurrencyEUR,  choiceEUR)==='Choose currency'?
+      null :
+      'Результат: ' + currencyConverter(inputCurrencyEUR,  choiceEUR)}}</p>
+
+  </div>
+  <!-- окремий компонент, можна винести в окремий файл-->
+  <div class="currency_div">
+    <h2>Конвертер валюти</h2>
+    {{choiceUSD? choiceUSD: null}}
+    <input type="text" value="" (change)="setCurrencyUSD($event)" placeholder="Введіть валюту"/>
+    <select (change)="setChoiceUSD($event)">
+      <option>USD to UAH</option>
+      <option>UAH to USD</option>
+    </select>
+    <p>{{currencyConverter(inputCurrencyUSD,  choiceUSD)==='Choose currency'?
+      null :
+      'Результат: ' + currencyConverter(inputCurrencyUSD,  choiceUSD)}}</p>
+  </div>
+</div>
